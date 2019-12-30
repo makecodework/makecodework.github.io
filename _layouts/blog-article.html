@@ -7,23 +7,22 @@ layout: blog
       <div class="col-md-8">
         <div class="blog-item">
           <div class="row">
-            {% for post in site.categories.news %}
             <div class="col-xs-12 col-sm-2 text-center">
               <div class="entry-meta">
-                <span id="publish_date">{{ post.time }}</span>
-                <span><i class="fa fa-user"></i> <a href="#">{{post.author}}</a></span>
+                <span id="publish_date">{{ page.time }}</span>
+                <span><i class="fa fa-user"></i> <a href="#">{{page.author}}</a></span>
                 <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">2 Comments</a></span>
                 <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
               </div>
             </div>
 
             <div class="col-xs-12 col-sm-10 blog-content">
-              <a href="#"><img class="img-responsive img-blog" src="assets/images/blog/{{post.image}}" width="100%" alt="" /></a>
-              <h2><a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></h2>
-              <h3>{{post.excerpt}}</h3>
-              <a class="btn btn-primary readmore" href="{{site.baseurl}}{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+              <a href="#"><img class="img-responsive img-blog" src="{{site.baseurl}}/assets/images/blog/{{page.image}}" width="100%" alt="" /></a>
+              <h2><a href="{{site.baseurl}}{{ post.url }}">{{page.title}}</a></h2>
+              <h3>{{page.content}}</h3>
+              {% include talkyard-comments.html %}
             </div>
-            {% endfor %}
+
           </div>
         </div>
       </div>
