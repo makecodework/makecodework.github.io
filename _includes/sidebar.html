@@ -5,14 +5,19 @@
     </form>
   </div>
   <!--/.search-->
+<!-- TODO: creat a link for all categories. -->
+
   <div class="widget categories">
     <h3>Categories</h3>
     <div class="row">
       <div class="col-sm-6">
         <ul class="blog_category">
+
           {% assign cats =  site.categories | unig %}
           {% for cat in cats %}
-          <li><a href="#">{{ cat[0] }} <span class="badge">{{cat[1].size}}</span></a></li>
+          <li><a href="#">{{ cat[0] }}
+            <span class="badge">{{cat[1].size}}</span>
+          </a></li>
           {% endfor %}
 
         </ul>
@@ -54,12 +59,12 @@
   <div class="widget blog_gallery">
     <h3>Our Gallery</h3>
     <ul class="sidebar-gallery">
-      <li><a href="#"><img src="images/blog/gallery1.png" alt="" /></a></li>
+      <!-- <li><a href="#"><img src="images/blog/gallery1.png" alt="" /></a></li>
       <li><a href="#"><img src="images/blog/gallery2.png" alt="" /></a></li>
       <li><a href="#"><img src="images/blog/gallery3.png" alt="" /></a></li>
       <li><a href="#"><img src="images/blog/gallery4.png" alt="" /></a></li>
       <li><a href="#"><img src="images/blog/gallery5.png" alt="" /></a></li>
-      <li><a href="#"><img src="images/blog/gallery6.png" alt="" /></a></li>
+      <li><a href="#"><img src="images/blog/gallery6.png" alt="" /></a></li> -->
     </ul>
 
 
