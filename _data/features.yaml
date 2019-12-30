@@ -1,0 +1,44 @@
+- id: features
+  title: Features
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam.
+  items:
+    - title:  Fresh and Clean
+      meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      icon: fa-laptop
+      categories: features
+    - title:  Retina ready
+      meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      icon: fa-comments
+      categories: features
+    - title:  Easy to customize
+      meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      icon: fa-cloud-download
+      categories: features
+    - title:  Adipisicing elit
+      meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      icon: fa-leaf
+      categories: features
+    - title:  Sed do eiusmod
+      meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      icon: fa-cogs
+      categories: features
+    - title:  Labore et dolore
+      meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+      icon: fa-heart
+      categories: features
+- id: about
+  title: About Us
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam.
+  items:
+    - percent: 85%
+      name: wordpress
+      class: wp
+    - percent: 55%
+      name: Laravel
+      class: html
+    - percent: 65%
+      name: Android
+      class: css
+    - percent: 45%
+      name: iOS
+      class: joomla
