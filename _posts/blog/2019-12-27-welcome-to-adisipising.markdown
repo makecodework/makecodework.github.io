@@ -5,6 +5,7 @@ date: 07  NOV
 author: John Doe
 meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 image: blog1.jpg
+tag: computer, php, python
 category: news
 ---
 !!!Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.

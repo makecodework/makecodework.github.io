@@ -5,7 +5,8 @@ date: 07  NOV
 author: Codegrabber
 meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 image: blog2.jpg
-category: news
+tag: android, javascript, sass
+category: jquery
 ---
 [new post] Curabitur quis libero leo, pharetra mattis eros. Praesent consequat libero eget dolor convallis vel rhoncus magna scelerisque. Donec nisl ante, elementum eget posuere a, consectetur a metus. Proin a adipiscing sapien. Suspendisse vehicula porta lectus vel semper. Nullam sapien elit, lacinia eu tristique non.posuere at mi. Morbi at turpis id urna ullamcorper ullamcorper.
 
