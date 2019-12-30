@@ -1,0 +1,54 @@
+- id: recent
+  title: Recent Works
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam
+  imagefolder: /assets/images/portfolio
+  images:
+  - name: item1.png
+    thumb: item1.png
+    title: Business theme
+    text: There are many variations of passages of Lorem Ipsum available, but the majority.
+    icon: fa-eye
+  - name: item2.png
+    thumb: item2.png
+    text: The second image
+    icon: fa-eye
+  - name: item3.png
+    thumb: item3.png
+    text: The third image
+    icon: fa-eye
+  - name: item4.png
+    thumb: item4.png
+    text: The first image
+    icon: fa-eye
+  - name: item5.png
+    thumb: item5.png
+    text: The second image
+    icon: fa-eye
+  - name: item6.png
+    thumb: item6.png
+    text: The third image
+    icon: fa-eye
+  - name: item7.png
+    thumb: item7.png
+    text: The first image
+    icon: fa-eye
+  - name: item8.png
+    thumb: item8.png
+    text: The second image
+    icon: fa-eye
+  - name: item9.png
+    thumb: item9.png
+    text: The third image
+    icon: fa-eye
+  - name: item10.png
+    thumb: item10.png
+    text: The first image
+    icon: fa-eye
+  - name: item11.png
+    thumb: item11.png
+    text: The second image
+    icon: fa-eye
+  - name: item12.png
+    thumb: item12.png
+    text: The third image
+    icon: fa-eye
