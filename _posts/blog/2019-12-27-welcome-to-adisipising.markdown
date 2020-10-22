@@ -1,7 +1,7 @@
 ---
 layout: blog-article
 title:  Consequat bibendum quam liquam viverra
-date: 07  NOV
+
 author: John Doe
 meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
 image: blog1.jpg
