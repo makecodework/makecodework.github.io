@@ -1,4 +1,4 @@
-<header id="header" class="clearfix">
+<header id="header" class="{% if page.url == '/' %} main_header  {% endif %} clearfix">
     <div class="container">
       <div class="topnavbar topnavbar-fixed-top">
         <div class="toplogo">
@@ -7,7 +7,7 @@
         <div class="topsearch">
           <form class="f_search" action="">
             <input type="submit" value="Find">
-            <input type="text" placeholder="Type what to find ...">            
+            <input type="text" autocomplete="off" placeholder="Type what to find ...">
           </form>
         </div>
         <div class="topbtn">
