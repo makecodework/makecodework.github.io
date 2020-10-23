@@ -205,6 +205,7 @@ footer,
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    z-index: 100;
 }
 .s_img .intro > h1 {
     text-align: center;
@@ -370,20 +371,25 @@ ul.pagination li span.page_numbers.active{
 /* ==== Footer ==== */
 #footer {
     color: #fff;
-    background-color: #333;
+    background-color: #000;
     color: hsla(0, 0%, 100%, .6);
     width: 100%;
+    position: relative;
+    bottom: 0;
+    z-index: 100;
 }
 #footer .bottom_menu {
-    padding: 10px 0;
     width: 100%;
 }
+
 #footer .bottom_menu .f_ul{
     -webkit-box-flex: 1;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     min-width: 0;
+    padding: 16px 0;    
+    
 }
 #footer a {
     color: #fff9;

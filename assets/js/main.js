@@ -1,5 +1,29 @@
 jQuery(function ($) {
-
+  $(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 0,
+    animateOut: 'fadeOut',
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 1,
+        nav: false
+      },
+      1000: {
+        items: 1,
+        nav: false,
+        loop: false
+      }
+    }
+  });
   // accordian
   $('.accordion-toggle').on('click', function () {
     $(this).closest('.panel-group').children().each(function () {
