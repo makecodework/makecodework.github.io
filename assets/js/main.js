@@ -1,23 +1,4 @@
 jQuery(document).ready(function ($) {
-  // gallery mixing and filter.
-  var containerEl = document.querySelector('.grid');
-  var mixer = mixitup(containerEl, {
-    animation: {
-      animateResizeContainer: false // required to prevent column algorithm bug
-    }
-  });
-  // let config = {
-  //   selectors: {
-  //     target: '.grid-item',
-  //     filter: '.filter',
-  //   },
-  //   animation: {
-  //     animateResizeContainer: false,
-  //     effects: 'fade scale'
-  //   }
-  // };
-  // $('.grid').mixItUp(config);  // End of gallery mixing and filter.
-  
   $(".owl-carousel").owlCarousel({
     items: 1,
     loop: true,
@@ -96,7 +77,13 @@ jQuery(document).ready(function ($) {
   // $("a[rel^='prettyPhoto']").prettyPhoto({
   //   social_tools: false
   // });
-
+// gallery mixing and filter.
+var containerEl = document.querySelector('.grid');
+var mixer = mixitup(containerEl, {
+  animation: {
+    animateResizeContainer: false // required to prevent column algorithm bug
+  }
+});
   
 
 });
