@@ -24,6 +24,16 @@ jQuery(document).ready(function ($) {
       }
     }
   });
+
+  // Effect on the card on the product page.
+  $('.view-mode li a').on('click', function() {
+        var $proStyle = $(this).data('view');
+        $('.view-mode li').removeClass('active');
+        $(this).parent('li').addClass('active');
+        $('.product-view').removeClass('product-grid product-list').addClass($proStyle);
+    })
+
+
   // accordian
   $('.accordion-toggle').on('click', function () {
     $(this).closest('.panel-group').children().each(function () {
@@ -84,6 +94,6 @@ var mixer = mixitup(containerEl, {
     animateResizeContainer: false // required to prevent column algorithm bug
   }
 });
-  
+
 
 });

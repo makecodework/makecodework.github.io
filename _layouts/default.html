@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Bootstrap -->
-  <!--<link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/assets/css/font-awesome.min.css" rel="stylesheet" >-->
+  <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"> -->
+  <link href="{{site.baseurl}}/assets/css/font-awesome.min.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
 
@@ -28,14 +29,16 @@
     <div class="container f_block_menu">
       <ul class="f_ul">
         <li class="{% if page.url == '/index.html' %} active {% endif %}"><a href="index.html">Продукти</a></li>
-        <li class="{% if page.url == '/services.html' %} active {% endif %}"><a href="services.html">Фонові фарби</a></li>
+        <li class="{% if page.url == '/products.html' %} active {% endif %}"><a href="products.html">
+          Фонові фарби</a>
+        </li>
         <li class="{% if page.url == '/portfolio.html' %} active {% endif %}"><a href="portfolio.html">
           Спеціальні продукти</a>
         </li>
         <li class="{% if page.url == '/blog.html' %} active {% endif %}"><a href="{{site.baseurl}}/blog.html">
           Ефекти, яких можна досягти</a>
         </li>
-        <li class="{% if page.url == '/contact-us.html' %} active {% endif %}"><a href="contact-us.html">
+        <li class="{% if page.url == '/services.html' %} active {% endif %}"><a href="contact-us.html">
           Arthe Decorate Line </a>
         </li>
         <li class="{% if page.url == '/contact-us.html' %} active {% endif %}"><a href="contact-us.html">
@@ -56,7 +59,7 @@
         <li class="{% if page.url == '/' %} active {% endif %}"><a href="#">
             Підбір фарби для інтер'єрів </a>
         </li>
-      </ul> 
+      </ul>
     </div>
   </div>
 </footer>
@@ -64,11 +67,11 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="{{site.baseurl}}/assets/js/jquery.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script> -->
-<script src="{{site.baseurl}}/assets/js/mixitup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+<!-- <script src="{{site.baseurl}}/assets/js/mixitup.min.js"></script> -->
 <!-- <script src="{{site.baseurl}}/assets/js/jquery.prettyPhoto.js"></script>
 <script src="{{site.baseurl}}/assets/js/jquery.isotope.min.js"></script>-->
-<script src="{{site.baseurl}}/assets/js/wow.min.js"></script> 
+<script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="{{site.baseurl}}/assets/js/main.js"></script>
 </body>
