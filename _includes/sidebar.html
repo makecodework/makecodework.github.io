@@ -1,10 +1,9 @@
-<aside class="">
+<aside class="sidebar-3 sidebar-collection ">
   <div class="widget categories">
     <h3>Categories</h3>
     <div class="row">
       <div class="col-sm-6">
         <ul class="blog_category">
-
           {% assign cats =  site.categories | unig %}
           {% for cat in cats %}
           <li><a href="#">{{ cat[0] }}
@@ -31,15 +30,15 @@
     </div>
   </div>
   <!--/.archieve-->
-  <div class="widget tags">
+  <div class="widget sidebar-block product-tags">
     <h3>Tag Cloud</h3>
-    <ul class="tag-cloud">
+    <ul class="listSidebarBlog list-unstyled">
       {%
         assign tags =  site.posts
         | map: 'tag' | join: ','  | split: ','
       %}
       {% for tag in tags  %}
-      <li><a class="btn btn-xs btn-primary" href="#">
+      <li><a href="#">
           {{ tag }}
         </a></li>
       {% endfor %}
@@ -51,12 +50,12 @@
   <div class="widget blog_gallery">
     <h3>Our Gallery</h3>
     <ul class="sidebar-gallery">
-      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/gallery1.png" alt="" /></a></li>
-      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/gallery2.png" alt="" /></a></li>
-      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/gallery3.png" alt="" /></a></li>
-      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/gallery4.png" alt="" /></a></li>
-      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/gallery5.png" alt="" /></a></li>
-      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/gallery6.png" alt="" /></a></li>
+      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/1.jpg" alt="" /></a></li>
+      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/2.jpg" alt="" /></a></li>
+      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/3.jpg" alt="" /></a></li>
+      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/7.jpg" alt="" /></a></li>
+      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/8.jpg" alt="" /></a></li>
+      <li><a href="#"><img src="{{site.baseurl}}/assets/images/blog/9.jpg" alt="" /></a></li>
     </ul>
   </div>
   <!--/.blog_gallery-->

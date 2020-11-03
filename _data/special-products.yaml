@@ -1,0 +1,30 @@
+- title: Arthe
+  meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  url: product-detail.html
+  images:
+    - image: ArtheMetal2.jpg
+      text: some text
+    - image: ArtheMetal3.jpg
+      text: some text
+  tag: computer, php, python
+  category: Arthe
+- title: Decorate
+  meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  images:
+    - image: Decora1.jpg
+      text: some text for decora
+    - image: decoradeluxe3.jpg
+      text: some text for decora
+    - image: decoradeluxe5.jpg
+      text: some text for decora
+  category: Decorate
+- title: Decorate
+  meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
+  images:
+    - image: deluxe.jpg
+      text: some text for decora
+    - image: decoradeluxe3.jpg
+      text: some text for decora
+    - image: encausto1.jpg
+      text: some text for decora
+  category: Deluxe

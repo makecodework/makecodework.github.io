@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-  $(".owl-carousel").owlCarousel({
+  $("#main-slider").owlCarousel({
     items: 1,
     loop: true,
     margin: 0,
@@ -25,13 +25,14 @@ jQuery(document).ready(function ($) {
     }
   });
 
+ 
   // Effect on the card on the product page.
-  $('.view-mode li a').on('click', function() {
-        var $proStyle = $(this).data('view');
-        $('.view-mode li').removeClass('active');
-        $(this).parent('li').addClass('active');
-        $('.product-view').removeClass('product-grid product-list').addClass($proStyle);
-    })
+  // $('.view-mode li a').on('click', function() {
+  //       var $proStyle = $(this).data('view');
+  //       $('.view-mode li').removeClass('active');
+  //       $(this).parent('li').addClass('active');
+  //       $('.product-view').removeClass('product-grid product-list').addClass($proStyle);
+  //   })
 
 
   // accordian

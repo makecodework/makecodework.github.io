@@ -1,62 +1,80 @@
 <!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--<![endif]-->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="{{ page.meta }}">
   <!-- Bootstrap -->
-  <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="{{site.baseurl}}/assets/css/bootstrap.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="{{site.baseurl}}/assets//libs/bootstrap/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"> -->
+
   <link href="{{site.baseurl}}/assets/css/font-awesome.min.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <link href="{{site.baseurl}}/assets/css/animate.min.css" rel="stylesheet">
-  <!-- <link href="{{site.baseurl}}/assets/css/prettyPhoto.css" rel="stylesheet"> -->
-  <link href="{{site.baseurl}}/assets/css/responsive.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <!-- Vendor CSS -->
+
+  <!-- <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/libs/nivo-slider/css/nivo-slider.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/libs/nivo-slider/css/animate.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/libs/nivo-slider/css/style.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/libs/font-material/css/material-design-iconic-font.min.css">
+  <!-- <link rel="stylesheet" href="{{site.baseurl}}/assets/libs/slider-range/css/jslider.css"> -->
+    <!-- <link rel="stylesheet" href="libs/owl-carousel/assets/owl.carousel.min.css"> -->
+
+  <link href="{{site.baseurl}}/assets/css/style.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/assets/css/responsive.css" rel="stylesheet">
   <link href="{{site.baseurl}}/assets/css/main.css" rel="stylesheet">
   <title>{{ page.title }}</title>
 </head>
-<body class="homepage">
-  <div class="wrraper">
+<body id="product-sidebar-left" class="product-grid-sidebar-left ">
+  <div class="wrapper-site">
     {% include nav.html %}
     {{content}}
   </div>
 <footer id="footer" class="midnight-blue">
   <div class="bottom_menu">
-    <div class="container f_block_menu">
+    <div class="container-fluid f_block_menu">
       <ul class="f_ul">
-        <li class="{% if page.url == '/index.html' %} active {% endif %}"><a href="index.html">Продукти</a></li>
-        <li class="{% if page.url == '/products.html' %} active {% endif %}"><a href="products.html">
+        <li ><a class="{% if page.url == '/index.html' %}active {% endif %}" href="index.html">Продукти</a></li>
+        <li ><a class="{% if page.url == '/products.html' %}active {% endif %}" href="{{ site.baseurl }}/products.html">
           Фонові фарби</a>
         </li>
-        <li class="{% if page.url == '/portfolio.html' %} active {% endif %}"><a href="portfolio.html">
+        <li ><a class="{% if page.url == '/product-grid-sidebar-left.html' %}active {% endif %}" href="{{ site.baseurl }}/product-grid-sidebar-left.html">
           Спеціальні продукти</a>
         </li>
-        <li class="{% if page.url == '/blog.html' %} active {% endif %}"><a href="{{site.baseurl}}/blog.html">
+        <li class="{% if page.url == '/ideas.html' %}active {% endif %}"><a class="{% if page.url == '/ideas.html' %}active {% endif %}" href="{{site.baseurl}}/ideas.html">
           Ефекти, яких можна досягти</a>
         </li>
-        <li class="{% if page.url == '/services.html' %} active {% endif %}"><a href="contact-us.html">
+        <li ><a class="{% if page.url == '/paint.html' %}active {% endif %}" href="paint.html">
           Arthe Decorate Line </a>
         </li>
-        <li class="{% if page.url == '/contact-us.html' %} active {% endif %}"><a href="contact-us.html">
+        <li ><a class="{% if page.url == '/contact-us.html' %}active {% endif %}" href="contact-us.html">
             Перевірено брендами </a>
         </li>
-        <li class="{% if page.url == '/portfolio.html' %} active {% endif %}"><a href="portfolio.html">
+        <li ><a class="{% if page.url == '/portfolio.html' %}active {% endif %}" href="{{ site.baseurl }}/portfolio.html">
             Наші роботи </a>
         </li>
-        <li class="{% if page.url == '/contact-us.html' %} active {% endif %}"><a href="contact-us.html">
+        <li ><a class="{% if page.url == '/contact-us.html' %}active {% endif %}" href="contact-us.html">
             Співпраця </a>
         </li>
-        <li class="{% if page.url == '/blog.html' %} active {% endif %}"><a href="blog.html">
+        <li ><a class="{% if page.url == '/blog.html' %}active {% endif %}" href="{{ site.baseurl }}/blog.html">
             Блог </a>
         </li>
-        <li class="{% if page.url == '/contact-us.html' %} active {% endif %}"><a href="contact-us.html">
+        <li ><a class="{% if page.url == '/contact-us.html' %}active {% endif %}" href="contact-us.html">
             Контакти </a>
         </li>
-        <li class="{% if page.url == '/' %} active {% endif %}"><a href="#">
+        <li ><a class="{% if page.url == '/' %}active {% endif %}" href="#">
             Підбір фарби для інтер'єрів </a>
         </li>
       </ul>
@@ -64,16 +82,39 @@
   </div>
 </footer>
 <!--/#footer-->
-
+<!-- Page Loader -->
+<!-- <div id="page-preloader">
+    <div class="page-loading">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+</div> -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{{site.baseurl}}/assets/js/jquery.js"></script>
+<!-- <script src="{{site.baseurl}}/assets/js/jquery.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- <script src="{{site.baseurl}}/assets/libs/bootstrap.min.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/bootstrap.min.js"></script>
+<script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
+<script src="{{site.baseurl}}/assets/libs/slider-range/js/tmpl.js"></script>
+<script src="{{site.baseurl}}/assets/libs/slider-range/js/jquery.dependClass-0.1.js"></script>
+<script src="{{site.baseurl}}/assets/libs/slider-range/js/draggable-0.1.js"></script>
+<script src="{{site.baseurl}}/assets/libs/slider-range/js/jquery.slider.js"></script>
+
+<script src="{{site.baseurl}}/assets/js/theme.js"></script>
+<script src="{{site.baseurl}}/assets/js/main.js"></script>
+
+
 <!-- <script src="{{site.baseurl}}/assets/js/mixitup.min.js"></script> -->
 <!-- <script src="{{site.baseurl}}/assets/js/jquery.prettyPhoto.js"></script>
 <script src="{{site.baseurl}}/assets/js/jquery.isotope.min.js"></script>-->
-<script src="{{site.baseurl}}/assets/js/wow.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="{{site.baseurl}}/assets/js/main.js"></script>
+ <!-- Vendor JS -->
+
+<!-- <script src="{{site.baseurl}}/assets/libs/popper/popper.min.js"></script> -->
 </body>
 </html>

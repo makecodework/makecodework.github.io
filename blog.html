@@ -1,22 +1,22 @@
 ---
 layout: blog
 ---
-<section id="blog" class="container">
+<section id="blog" class="container-fluid">
   <div class="blog">
     <div class="blog_excerpt">
-      {% for post in site.posts %}
+      {% for post in site.categories.news %}
       <div class="blog_content">
         <div class="entry-meta">
           <!-- <span id="publish_date">{{ post.time }}</span> -->
           <span><i class="fa fa-user"></i> <a href="#">{{post.author}}</a></span>
           <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">2 Comments</a></span>
           <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
-        </div>        
+        </div>
         <a href="#"><img class="img-blog" src="assets/images/blog/{{post.image}}" width="100%" alt="" /></a>
         <div class="short-article">
           <h2><a href="{{site.baseurl}}{{ post.url }}">{{post.title}}</a></h2>
           <p>{{post.excerpt}}</p>
-          <a class="btn btn-primary readmore" href="{{site.baseurl}}{{ post.url }}">Read More 
+          <a class="btn btn-primary readmore" href="{{site.baseurl}}{{ post.url }}">Read More
             <i class="fa fa-angle-right"></i>
           </a>
         </div>

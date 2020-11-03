@@ -4,7 +4,7 @@ title:  Welcome to the next post
 # date: 07  NOV
 author: Codegrabber
 meta: Lorem ipsum dolor sit amet, consectetur adipisicing elit
-image: blog2.jpg
+image: 2.jpg
 tag: android, javascript, sass
 category: news
 ---

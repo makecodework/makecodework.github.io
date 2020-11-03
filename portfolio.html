@@ -1,32 +1,35 @@
 ---
 layout: portfolio
 ---
-<section id="blog" class="container">
+<section id="blog" class="container-fluid">
     <div class="blog">
         <div class="portfolio">
             <div class="p_categories">
                 <div class="category-buttons">
                     <ul>
                         <li class="filter active" data-filter="all">All</li>
-                        <li class="filter" data-filter=".corporate">Фасадні роботи</li>
-                        <li class="filter" data-filter=".personal">Внутрішні роботи</li>
-                        <li class="filter" data-filter=".agency">Ще роботи</li>
-                        <li class="filter" data-filter=".portal">Роботи</li>
+                        {% for cat in site.data.special-products%}
+                        <li class="filter" data-filter=".{{  cat.category  }}">{{ cat.category }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
-            <div id="image-gallery" class="portfolio_items ">
+            <div id="image-gallery" class="portfolio_items">
                 <div class="grid">
-                    <div class="grid-item gallery-img mix corporate">
+                    {% for cat in site.data.special-products %}
+                    {% for image in cat.images %}
+                    <div class="grid-item gallery-img mix {{  cat.category  }}">
                         <div class="item">
-                            <img src="https://loremflickr.com/320/240/brazil,rio" />
+                            <img src="assets/images/gallery/{{ image.image }}" />
                             <div class="p-inner">
-                                <h5>Work 1</h5>
-                                <div class="cat">Corporate</div>
+                                <h5>{{ cat.title }}</h5>
+                                <div class="cat">{{ image.text }}</div>
                             </div>
-                        </div>
+                        </div>                        
                     </div>
-                    <div class="grid-item gallery-img mix corporate">
+                    {% endfor %}
+                    {% endfor %}
+                    <!-- <div class="grid-item gallery-img mix corporate">
                         <div class="item">
                             <img src="https://loremflickr.com/320/240/brazil,rio" />
                             <div class="p-inner">
@@ -115,8 +118,7 @@ layout: portfolio
                                  <div class="cat">Portal</div>
                              </div>
                          </div>
-                     </div>
-
+                     </div> -->
                 </div>
             </div>
         </div>
