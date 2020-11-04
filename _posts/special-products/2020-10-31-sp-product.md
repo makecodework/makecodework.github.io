@@ -6,7 +6,7 @@ description: Curabitur quis libero leo, pharetra mattis eros. Praesent consequat
 images:
   - thumb: ArtheMetal2.jpg
     image1: encausto1.jpg
-    image2: decoradeluxe4.jpg
+    image2: Decoradeluxe4.jpg
     image3: Decora1.jpg
 price: 28.08
 addCart: До корзини
