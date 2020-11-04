@@ -113,7 +113,7 @@ body {
   flex-direction: column;
   align-items: stretch;
   min-height: 100%;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 /* ==== header ==== */
@@ -357,7 +357,9 @@ aside {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: .3vw;
 }
-
+.product-groups >.discription {
+  font-size: 14px;
+}
 /* ==== !Blog ==== */
 .pagination_block {
   width: 100%;
