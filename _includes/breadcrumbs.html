@@ -2,21 +2,31 @@
     <div class="container-fluid no-index">
         <div class="breadcrumb">
             <ol>
+                
                 <li>
                     <a href="/">
                         <span>Головна</span>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <span>Каталог</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <span>Назва продукту</span>
-                    </a>
-                </li>
+                {% if page.url == '/about-us.html' %}
+                    <li>
+                        <a href="#">
+                            <span>Контакти</span>
+                        </a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="#">
+                            <span>Каталог</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Назва продукту</span>
+                        </a>
+                    </li>
+                {% endif %}
+                
             </ol>
         </div>
     </div>

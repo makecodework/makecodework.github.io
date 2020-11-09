@@ -140,7 +140,7 @@
                               </span>
                             </div>
                             <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum auctor, nisi elit consequat etiam non auctor.</p>
-                            <div class="option has-border d-lg-flex size-color">
+                            <!-- <div class="option has-border d-lg-flex size-color">
                               <div class="size">
                                 <span class="size">Тип продукту :</span>
                                 <select>
@@ -159,7 +159,7 @@
                                 <span class="brown"></span>
                                 <span class="red"></span>
                               </div>
-                            </div>
+                            </div> -->
                             <div class="has-border cart-area">
                               <div class="product-quantity">
                                 <div class="qty">
@@ -236,25 +236,21 @@
                               </div>
                             </div>
                             <div class="content">
-                              <p>SKU :
-                                <span class="content2">
-                                  <a href="#">e-02154</a>
-                                </span>
-                              </p>
                               <p>Категорії :
                                 <span class="content2">
                                   {% for cat in page.category %}
                                   <a href="#">{{ cat }}</a>,
                                   {% endfor %}
                                 </span>
-                              </p>
-                              <p>теги :
+                                &nbsp; | &nbsp;
+                                <span>теги : </span>
                                 <span class="content2">
                                   {% for t in page.tag %}
                                   <a href="#">{{ t }}</a>,
                                   {% endfor %}
                                 </span>
                               </p>
+                              
                             </div>
                           </div>
                         </div>

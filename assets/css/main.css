@@ -98,10 +98,12 @@ button[type="submit"] {
   padding: 5px 10px;
   font-size: 14px;
   cursor: pointer;
-   border-top-left-radius: 3pt;
-   border-bottom-left-radius: 3pt;
+  border-top-left-radius: 3pt;
+  border-bottom-left-radius: 3pt;
 }
-
+p {
+  font-size: 15px;
+}
 body {
   /* background: rgb(148, 56, 56); */
   background: #fafafa;
@@ -256,7 +258,7 @@ footer,
   font-weight: 400;
 }
 
-.s_img .intro > a.center_btn {
+.s_img .intro>a.center_btn {
   text-decoration: none;
   text-align: center;
   background: #fff;
@@ -309,12 +311,15 @@ footer,
   -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
   zoom: 1;
 }
+
 .short-article {
   margin: 10px 20px;
 }
+
 .short-article h2 {
   margin-bottom: 10px;
 }
+
 .full-blog {
   display: flex;
   flex-direction: row;
@@ -357,9 +362,11 @@ aside {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: .3vw;
 }
-.product-groups >.discription {
+
+.product-groups>.discription {
   font-size: 14px;
 }
+
 /* ==== !Blog ==== */
 .pagination_block {
   width: 100%;
@@ -471,7 +478,7 @@ ul.pagination li span.page_numbers.active {
 }
 
 .portfolio_items .item .p-inner {
-  padding: 20px 30px;  
+  padding: 20px 30px;
 }
 
 .grid {
@@ -483,7 +490,7 @@ ul.pagination li span.page_numbers.active {
   column-count: 4;
   -moz-column-count: 4;
   -webkit-column-count: 4;
-  
+
 }
 
 .grid .grid-item {
